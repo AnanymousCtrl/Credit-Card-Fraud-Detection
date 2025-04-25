@@ -1,8 +1,8 @@
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
-def load_the_data(url):
-    df = pd.read_csv(url)
+def load_the_data(path):
+    df = pd.read_csv(path)
     return df
 
 def data_preprocessing(df):

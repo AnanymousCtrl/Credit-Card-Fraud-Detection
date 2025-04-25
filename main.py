@@ -4,7 +4,7 @@ from src.model import model_training
 from src.evaluate import model_evaluation
 
 if __name__ == "__main__":
-    df = load_the_data("data/creditcard.csv")
+    df = load_the_data("data\creditcard.csv")
     df = data_preprocessing(df)
 
     import numpy as np
@@ -14,4 +14,3 @@ if __name__ == "__main__":
 
     model, X_test, y_test =  model_training(df)
     model_evaluation(model, X_test, y_test)
-    
